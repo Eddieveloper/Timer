@@ -27,7 +27,7 @@ button { border: 0; color: inherit; font: inherit; cursor: pointer; }
 .icon-button:hover { background: var(--pink); transform: rotate(20deg); }
 .hero { min-height: 430px; display: grid; grid-template-columns: 1.1fr .9fr; border-bottom: 1px solid var(--line); position: relative; }
 .hero-copy { padding: 68px 0 52px; position: relative; z-index: 1; }
-.eyebrow { font: 10px var(--mono); text-transform: uppercase; letter-spacing: .13em; margin: 0 0 22px; color: var(--pink-deep); }
+.eyebrow { font: 700 10px var(--sans); text-transform: uppercase; letter-spacing: .16em; margin: 0 0 22px; color: var(--pink-deep); }
 h1, h2, h3, p { margin-top: 0; }
 h1 { font: 700 clamp(48px, 7vw, 106px)/.89 var(--serif); letter-spacing: -.045em; margin: 0; }
 h1 i, h3 i { color: var(--pink-deep); font-family: var(--script); font-style: normal; font-weight: 600; letter-spacing: 0; }
@@ -62,7 +62,7 @@ h1 i, h3 i { color: var(--pink-deep); font-family: var(--script); font-style: no
 .workspace-heading { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; }
 .workspace-heading .eyebrow { margin-bottom: 7px; }
 h2 { font: 700 30px var(--serif); margin: 0; letter-spacing: -.03em; }
-.date-stamp { text-align: center; font: 9px/1.1 var(--mono); color: var(--muted); letter-spacing: .1em; }
+.date-stamp { text-align: center; font: 700 9px/1.1 var(--sans); color: var(--muted); letter-spacing: .14em; }
 .date-stamp strong { color: var(--pink-deep); font: 700 27px var(--serif); letter-spacing: -.05em; }
 .method-panels { position: relative; }
 .method-panel { display: none; background: var(--soft); padding: 36px 40px 42px; min-height: 514px; animation: reveal .35s ease both; }
