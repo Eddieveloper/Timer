@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f29ab7">
+  <title>baby steps, everyday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="brand" href="#top" aria-label="Baby steps, everyday home"><span class="brand-mark">◎</span><span>baby steps,<br><em>everyday.</em></span></a>
+      <div class="issue-note"><span>Issue 04</span><span>Focus / 2026</span></div>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle soft mode" title="Toggle soft mode">☼</button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-copy">
+          <p class="eyebrow">A field guide for getting unstuck</p>
+          <h1 id="pageTitle">Make room<br>for <i>focus.</i></h1>
+          <p class="intro">Small experiments for the days your brain needs a different door into the work.</p>
+          <div class="hero-rule"></div>
+          <p class="edition">Four ways to start, reset, and keep going <span>↘</span></p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="scribble">begin<br>anyway</div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-caption">Fig. 01 — a little<br>momentum</div>
+        </div>
+      </section>
+
+      <section class="content-grid" aria-label="Study methods">
+        <aside class="sidebar">
+          <p class="eyebrow menu-kicker">The menu <span>scroll / choose</span></p>
+          <nav class="method-nav" aria-label="Choose a study method">
+            <button class="method-link active" data-target="catch"><span>01</span>Catch me if you can</button>
+            <button class="method-link" data-target="scribble"><span>02</span>Scribble storm</button>
+            <button class="method-link" data-target="fake"><span>03</span>Fake class</button>
+            <button class="method-link" data-target="rooms"><span>04</span>Study in 3 rooms</button>
+          </nav>
+          <div class="sidebar-note"><span class="quote-mark">“</span><p>Attention is not a resource to be found. It is a room you can enter.</p><span class="attribution">— the unofficial handbook</span></div>
+        </aside>
+
+        <div class="workspace">
+          <div class="workspace-heading"><div><p class="eyebrow">Pick a practice</p><h2>Today's experiment</h2></div><div class="date-stamp">WED<br><strong>16</strong><br>SEP</div></div>
+          <div class="method-panels">
+            <article class="method-panel active" id="panel-catch" data-method="catch">
+              <div class="panel-top"><span class="tag">A short bet</span><span class="panel-index">01 / 04</span></div>
+              <h3>Catch me if<br><i>you can.</i></h3>
+              <p class="method-description">Set a timer for less time than you think you need. The deadline is the trick: make starting feel too easy to resist.</p>
+              <div class="timer-area"><div class="timer-display" data-display="catch">08:00</div><div class="timer-label">minutes on the clock</div><div class="timer-controls"><button class="primary-button start-button" data-timer="catch">Start timer <span>↗</span></button><button class="pause-button reset-button" data-reset="catch" aria-label="Reset timer">↺</button></div></div>
+              <div class="duration-picker"><span>Choose your bet</span><div class="duration-options" data-options="catch"><button data-minutes="5">05</button><button class="selected" data-minutes="8">08</button><button data-minutes="12">12</button><button data-minutes="15">15</button></div></div>
+            </article>
+
+            <article class="method-panel" id="panel-scribble" data-method="scribble">
+              <div class="panel-top"><span class="tag">No editing allowed</span><span class="panel-index">02 / 04</span></div>
+              <h3>Scribble<br><i>storm.</i></h3>
+              <p class="method-description">Take a blank sheet. Write everything you know about a topic for two minutes without stopping. Then fill the gap.</p>
+              <div class="timer-area"><div class="timer-display" data-display="scribble">02:00</div><div class="timer-label">minutes to empty your head</div><div class="timer-controls"><button class="primary-button start-button" data-timer="scribble">Start timer <span>↗</span></button><button class="pause-button reset-button" data-reset="scribble" aria-label="Reset timer">↺</button></div></div>
+              <div class="prompt-line"><span>Prompt</span><strong>What do I know already?</strong></div>
+            </article>
+
+            <article class="method-panel" id="panel-fake" data-method="fake">
+              <div class="panel-top"><span class="tag">Explain it simply</span><span class="panel-index">03 / 04</span></div>
+              <h3>Fake<br><i>class.</i></h3>
+              <p class="method-description">Teach the wall for five minutes. Explain the idea like you are in a video and your future self just pressed play.</p>
+              <div class="timer-area"><div class="timer-display" data-display="fake">05:00</div><div class="timer-label">minutes at the whiteboard</div><div class="timer-controls"><button class="primary-button start-button" data-timer="fake">Start timer <span>↗</span></button><button class="pause-button reset-button" data-reset="fake" aria-label="Reset timer">↺</button></div></div>
+              <div class="prompt-line"><span>Teach</span><strong>Could a curious 12-year-old follow?</strong></div>
+            </article>
+
+            <article class="method-panel" id="panel-rooms">
+              <div class="panel-top"><span class="tag">Change the scenery</span><span class="panel-index">04 / 04</span></div>
+              <h3>Study in<br><i>3 rooms.</i></h3>
+              <p class="method-description">Change location every 45 minutes. A new room gives your attention a clean edge and your body a gentle reset.</p>
+              <div class="timer-area"><div class="timer-display" data-display="rooms">45:00</div><div class="timer-label">minutes in this room</div><div class="timer-controls"><button class="primary-button start-button" data-timer="rooms">Start room one <span>↗</span></button><button class="pause-button reset-button" data-reset="rooms" aria-label="Reset timer">↺</button></div></div>
+              <div class="room-progress"><span class="room-dot current"></span><span class="room-line"></span><span class="room-dot"></span><span class="room-line"></span><span class="room-dot"></span><span class="room-label">Room 1 of 3</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><span>© 2025 baby steps, everyday.</span><span>Make the next ten minutes count.</span><span>Designed for a clear desk.</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
