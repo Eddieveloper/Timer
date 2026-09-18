@@ -7,11 +7,21 @@ function formatTime(seconds) {
   return `${minutes}:${remainder}`;
 }
 
+function updateFlower(key) {
+  const timer = timers[key];
+  const flower = document.querySelector(`[data-flower="${key}"]`);
+  const growth = 1 - (timer.remaining / defaults[key]);
+  const stage = growth === 0 ? 'seed' : growth < 0.34 ? 'sprout' : growth < 0.72 ? 'bud' : growth < 1 ? 'blooming' : 'full flower';
+  flower.style.setProperty('--growth', growth);
+  flower.setAttribute('aria-label', `Tulip growth: ${stage}`);
+}
+
 function updateTimer(key) {
   const timer = timers[key];
   const display = document.querySelector(`[data-display="${key}"]`);
   const button = document.querySelector(`[data-timer="${key}"]`);
   display.textContent = formatTime(timer.remaining);
+  updateFlower(key);
   button.innerHTML = timer.running ? 'Pause timer <span>Ⅱ</span>' : `Start timer <span>↗</span>`;
   if (timer.remaining === 0) {
     clearInterval(timer.interval);
